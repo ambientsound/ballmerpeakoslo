@@ -1,14 +1,14 @@
 <?
 
 require("postgresql.conf");
-echo "host=".DB_settings::$host." port=".DB_settings::$port." dbname=".DB_settings::$database." user=".DB_settings::$user." password=".DB_settings::$password;
+
 pg_connect("host=".DB_settings::$host." port=".DB_settings::$port." dbname=".DB_settings::$database." user=".DB_settings::$user." password=".DB_settings::$password);
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$name = pg_escape_string($_POST['name']);
 	$email = pg_escape_string($_POST['email']);
 
-	$sql = "INSERT into signup (name, email) values ($name, $email)";
+	$sql = "INSERT into signup (name, email) values ('$name', '$email')";
 	pg_query($sql);
 } else {
 	$sql = "SELECT count(*) from signup";
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 				color: #FFF;
 				font-family: 'Droid Sans';
 				max-width: 800px;
-				margin: auto;
+				margin: auto auto 50px auto;
 			}
 
 			h1, h2 {
@@ -77,7 +77,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<iframe class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brugata+17B,+Oslo,+Norge&amp;aq=0&amp;oq=Brugata+17B+o&amp;sll=60.964182,8.565002&amp;sspn=5.133776,14.227295&amp;t=w&amp;ie=UTF8&amp;hq=&amp;hnear=Brugata+17B,+Gr%C3%BCnerl%C3%B8kka,+0186+Oslo,+Norway&amp;z=14&amp;ll=59.914055,10.757454&amp;output=embed"></iframe>
 
 		<h2>Overbevist?</h2>
-		<?if($free_spots > 0): ?>
+		<?if($free_spots < 16): ?>
 		<p>Meld deg på her!</p>
 		<form action="index.php" method="post">
 			<label for="name">Navn</label>
