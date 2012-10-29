@@ -29,32 +29,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<style type="text/css">
-			body {
-				background: #139CCE;
-				color: #FFF;
-				font-family: 'Droid Sans';
-				max-width: 800px;
-				margin: auto auto 50px auto;
-			}
-
-			h1, h2 {
-				font-family: 'Ubuntu';
-				text-shadow: 1px 1px #d3d3d3;
-			}
-
-			h1 {
-				font-size: 40px;
-			}
-
-			a {
-				color: #FFF;
-			}
-
-			.map {
-				margin: 10px 0;
-			}
-		</style>
+        <link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<h1>Ballmer Peak Oslo</h1>

@@ -1,0 +1,28 @@
+body {
+    background: #139CCE;
+    color: #FFF;
+    font-family: 'Droid Sans';
+    max-width: 800px;
+    margin: auto auto 50px auto;
+}
+
+h1, h2 {
+    font-family: 'Ubuntu';
+    text-shadow: 1px 1px #d3d3d3;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em 0 0.75em;
+}
+
+a {
+    color: #FFF;
+}
+
+.map {
+    margin: 10px 0;
+}
