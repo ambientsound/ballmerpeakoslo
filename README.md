@@ -19,12 +19,12 @@ Lørdag 12. januar kl 12-03
 
 Skaffe domener:
 
- * Vi må komme på noen artige domener som trigger kreativiteten i deltakerene. Dersom vi satser på 16 deltakere, 4 lag à 4, så trenger vi 4 domenenavn. Forlag skrives under:
-	* yearofthewhale.com (kan doneres av po)
-	* kjempef.in (subdomenere kan doneres av po)
-	* oslojava.com (kan doneres av po)
-	* jippipedia.com (kan doneres av po)
-	* p0p.it (kan doneres av jmaister)
+* Vi må komme på noen artige domener som trigger kreativiteten i deltakerene. Dersom vi satser på 16 deltakere, 4 lag à 4, så trenger vi 4 domenenavn. Forlag skrives under:
+    * yearofthewhale.com (kan doneres av po)
+    * kjempef.in (subdomenere kan doneres av po)
+    * oslojava.com (kan doneres av po)
+    * jippipedia.com (kan doneres av po)
+    * p0p.it (kan doneres av jmaister)
     * html.no (subdomene kan doneres av [ambientsound](https://github.com/ambientsound)
     * pebkac.no (subdomene kan doneres av [ambientsound](https://github.com/ambientsound)
 * Test/produksjonsmiljø
@@ -41,3 +41,5 @@ Skaffe domener:
 * Nettside Fix!
 
 ## Gjennomførte oppgaver
+
+<!-- vi: se et sts=4 ts=4 sw=4: -->
