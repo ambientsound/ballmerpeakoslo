@@ -20,8 +20,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$free_spots = 0;
 }
 
-?>
-
+?><!DOCTYPE html>
 <html>
 	<head>
 		<title>Ballmer Peak Oslo</title>
@@ -36,10 +35,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<p>Ballmer Peak Oslo er Norges først offesielle ballmerpeakathon. Og hva er så det?</p>
 
 		<h2>Ballmerpeakathon?</h2>
-		<p>Et ballmerpeakathon har sitt navn fra <a href="">denne stripa fra XKCD</a>. TL;DR så er det en god blanding av et <a href="">hackathon</a> og et <a href="">meetup</a>. Vi kommer sammen, programmerer, og prøver å holde en kostant promille rundt 0,1337‰ noe som i følge mytene vil utløse endeløs kreativitet og uante programmeringsevner.</p>
+		<p>Et ballmerpeakathon har sitt navn fra <a href="http://xkcd.com/323/">denne stripa fra XKCD</a>. TL;DR så er det en god blanding av et <a href="http://en.wikipedia.org/wiki/Hackathon">hackathon</a> og et <a href="http://www.meetup.com/">meetup</a>. Vi kommer sammen, programmerer, og prøver å holde en kostant promille rundt 0,1337‰ noe som i følge mytene vil utløse endeløs kreativitet og uante programmeringsevner.</p>
 
 		<h2>Så hvordan gjør vi det?</h2>
-		<p>Vi har vært så heldige å få låne lokalene til verdens kuleste Drupal-nerder<a href="">Wunderkraut</a> i Brugata 17B. Der skal vi bruke fem timer på å snekre sammen noe spennede på web med god underholdningsverdi. Arrangørene kommer til å stille med ulike domenenavn, og du som deltaker skal velge deg et navn du synes er spennende og hacke i vei. Det vil dannes fire lag og laget som kommmer opp med det beste produktet på slutten av dagen vil få heder, ære og en flott premie. Kunsten er å holde seg på toppen!</p>
+		<p>Vi har vært så heldige å få låne lokalene til verdens kuleste Drupal-nerder, <a href="http://wunderkraut.no/">Wunderkraut</a>, i Brugata 17B. Der skal vi bruke fem timer på å snekre sammen noe spennede på web med god underholdningsverdi. Arrangørene kommer til å stille med ulike domenenavn, og du som deltaker skal velge deg et navn du synes er spennende og hacke i vei. Det vil dannes fire lag og laget som kommmer opp med det beste produktet på slutten av dagen vil få heder, ære og en flott premie. Kunsten er å holde seg på toppen!</p>
 
 		<h2>Så hva må jeg ta med?</h2>
 		<p>Det viktigste er deg selv, en datamaskin, godt humør og en god porsjon pågangsmot. Vi vil stille med alkohol til svært overkommelige priser, testservere og god stemning. Våre testservere vil allerede være knyttet opp til domenet du skal hacke på og vil støtte de største språkene og rammeverkene. Vi har allerede satt opp et git repo, så det er bare å klone og kode i vei. Ønsker du støtte for et spesielt rammeverk kan vi sette det opp på serverne, men si i fra i god tid. Husk å være klar med rammeverk og verktøy på maskinen din. Med fem timer til rådighet ønsker du ikke å knot med å sette opp et utviklingsmiljø.</p>
