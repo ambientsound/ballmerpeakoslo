@@ -1,6 +1,6 @@
 <?php
 
-const TOTAL_SPOTS = 16;
+$TOTAL_SPOTS = 16;
 
 require("postgresql.conf");
 
@@ -15,7 +15,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 function get_free_spaces_count() {
-	return TOTAL_SPOTS - get_signup_count();
+	global $TOTAL_SPOTS;
+	return $TOTAL_SPOTS - get_signup_count();
 }
 
 function get_signup_count() {
