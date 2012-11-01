@@ -1,4 +1,6 @@
-<?
+<?php
+
+const TOTAL_SPOTS = 16;
 
 require("postgresql.conf");
 
@@ -10,14 +12,21 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
 	$sql = "INSERT into signup (name, email) values ('$name', '$email')";
 	pg_query($sql);
-} else {
+}
+
+function get_free_spaces_count() {
+	return TOTAL_SPOTS - get_signup_count();
+}
+
+function get_signup_count() {
 	$sql = "SELECT count(*) from signup";
 	$res = pg_fetch_assoc(pg_query($sql));
 
-	if($res['count'] > 0)
-		$free_spots = $res['count'];
-	else
-		$free_spots = 0;
+	if($res['count'] > 0) {
+		return intval($res['count']);
+	}
+
+	return 0;
 }
 
 ?><!DOCTYPE html>
@@ -28,7 +37,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="style.css" />
 	</head>
 	<body>
 		<h1>Ballmer Peak Oslo</h1>
@@ -51,8 +60,8 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<iframe class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brugata+17B,+Oslo,+Norge&amp;aq=0&amp;oq=Brugata+17B+o&amp;sll=60.964182,8.565002&amp;sspn=5.133776,14.227295&amp;t=w&amp;ie=UTF8&amp;hq=&amp;hnear=Brugata+17B,+Gr%C3%BCnerl%C3%B8kka,+0186+Oslo,+Norway&amp;z=14&amp;ll=59.914055,10.757454&amp;output=embed"></iframe>
 
 		<h2>Overbevist?</h2>
-		<?if($free_spots < 16): ?>
-		<p>Meld deg på her!</p>
+		<? if(($free_spaces = get_free_spaces_count()) > 0): ?>
+		<p>Meld deg på her! Det er for tiden <?php echo $free_spaces; ?> ledige plasser.</p>
 		<form action="index.php" method="post">
 			<label for="name">Navn</label>
 			<input name="name" type="text" placeholder="Alan Turing">
@@ -67,3 +76,5 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
 		<?endif;?>
 	</body>
 </html>
+
+<?php /* vi: se noet: */ ?>
