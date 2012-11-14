@@ -27,6 +27,7 @@ Skaffe domener:
     * p0p.it (kan doneres av jmaister)
     * html.no (subdomene kan doneres av [ambientsound](https://github.com/ambientsound)
     * pebkac.no (subdomene kan doneres av [ambientsound](https://github.com/ambientsound)
+* Sette opp test-server. Kandidatene ligger i lokalene til wunderkraut. Vi bør ha en liten pre-workshop... 
 * Test/produksjonsmiljø
     * Mezzanine (inkl. Django)
     * Drupal med drush CLI
