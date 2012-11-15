@@ -43,6 +43,25 @@ function get_signup_count() {
 	</head>
 	<body>
 		<h1>Ballmer Peak Oslo</h1>
+		
+		<div id="påmelding">
+			<h2>Overbevist?</h2>
+			<? if(($free_spaces = get_free_spaces_count()) > 0): ?>
+			<p>Meld deg på her! Det er for tiden <?php echo $free_spaces; ?> ledige plasser.</p>
+			<form action="index.php" method="post">
+				<label for="name">Navn</label>
+				<input name="name" type="text" placeholder="Alan Turing">
+
+				<label for="email">Epost<label>
+				<input name="email" type="text" placeholder="ballmer@msft.com">
+
+				<input type="submit" value="Meld på">
+			</form>
+			<?else: ?>
+			<p>Vi er desverre fulltegnet for denne gang, men følg med! Det kommer alltid en neste :)</p>
+			<?endif;?>
+		</div>
+
 		<p>Ballmer Peak Oslo er Norges først offesielle ballmerpeakathon. Og hva er så det?</p>
 
 		<h2>Ballmerpeakathon?</h2>
@@ -60,22 +79,6 @@ function get_signup_count() {
 		<h2>Ok, nå er jeg skikkelig gira. Hvor møter jeg opp?</h2>
 		Vi har vært så heldige å få låne flotte lokaler fra Wunderkraut i Brugata 17B.<br />
 		<iframe class="map" width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Brugata+17B,+Oslo,+Norge&amp;aq=0&amp;oq=Brugata+17B+o&amp;sll=60.964182,8.565002&amp;sspn=5.133776,14.227295&amp;t=w&amp;ie=UTF8&amp;hq=&amp;hnear=Brugata+17B,+Gr%C3%BCnerl%C3%B8kka,+0186+Oslo,+Norway&amp;z=14&amp;ll=59.914055,10.757454&amp;output=embed"></iframe>
-
-		<h2>Overbevist?</h2>
-		<? if(($free_spaces = get_free_spaces_count()) > 0): ?>
-		<p>Meld deg på her! Det er for tiden <?php echo $free_spaces; ?> ledige plasser.</p>
-		<form action="index.php" method="post">
-			<label for="name">Navn</label>
-			<input name="name" type="text" placeholder="Alan Turing">
-
-			<label for="email">Epost<label>
-			<input name="email" type="text" placeholder="ballmer@msft.com">
-
-			<input type="submit" value="Meld på">
-		</form>
-		<?else: ?>
-		<p>Vi er desverre fulltegnet for denne gang, men følg med! Det kommer alltid en neste :)</p>
-		<?endif;?>
 		
 		<!-- Piwik --> 
 		<script type="text/javascript">
