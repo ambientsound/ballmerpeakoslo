@@ -29,4 +29,15 @@ a {
 
 #påmelding {
 	float:right;
+	border:1px solid white;
+	padding: 0 0 20px 0;
+
+}
+
+#påmelding h2 {
+	background:white;
+	color:#139CCE;
+	margin-top:0;
+	padding:5px;
+	text-align:center;
 }
