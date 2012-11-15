@@ -31,12 +31,16 @@ a {
 	float:right;
 	border:1px solid white;
 	padding: 0 0 20px 0;
+	max-width:450px;
 }
 	
 #påmelding h2 {
 	background:white;
 	color:#139CCE;
-	margin-top:0;
+	margin:0;
 	padding:5px;
 	text-align:center;
+}
+#påmelding * {
+	margin:10px;
 }
