@@ -41,6 +41,7 @@ a {
 	padding:5px;
 	text-align:center;
 }
-#påmelding * {
+#påmelding.div,
+#påmelding.form {
 	margin:10px;
 }
