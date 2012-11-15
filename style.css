@@ -28,7 +28,7 @@ a {
 }
 
 #påmelding {
-	float:right
+	float:right;
 	border:1px solid white;
 	padding: 0 0 20px 0;
 }
