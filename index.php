@@ -37,6 +37,7 @@ function get_signup_count() {
 		<link rel="icon" type="image/png" href="favicon.png">
 		<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Qwigley' rel='stylesheet' type='text/css'>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta name="description" content="Oslo desidert fuktigste hackathon. Møt gamle og treff nye venner mens du hacker på toppen av The Ballmer Peak (~0,1337‰ promille)">
 		<link rel="stylesheet" type="text/css" href="style.css" />

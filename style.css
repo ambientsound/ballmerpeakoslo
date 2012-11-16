@@ -5,17 +5,19 @@ body {
     max-width: 800px;
     margin: auto auto 50px auto;
 }
+h1 {
+  font-family: 'Qwigley';
+  font-size: 6em;
+  margin: 0.1em 0 0.3em 0;
+  border-bottom:solid  white;
+}
 
-h1, h2 {
+h2 {
     font-family: 'Ubuntu';
     text-shadow: 1px 1px #d3d3d3;
 }
 
-h1 {
-    font-size: 40px;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h2, h3, h4, h5, h6 {
     margin: 1.5em 0 0.75em;
 }
 
