@@ -45,7 +45,7 @@ function get_signup_count() {
 	<body>
 		<h1>Ballmer Peak Oslo</h1>
 		
-		<div id="påmelding">
+		<div id="signup">
 			<h2>Overbevist?</h2>
 			<? if(($free_spaces = get_free_spaces_count()) > 0): ?>
 			<p>Meld deg på her! Det er for tiden <?php echo $free_spaces; ?> ledige plasser.</p>

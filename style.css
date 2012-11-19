@@ -29,7 +29,7 @@ a {
     margin: 10px 0;
 }
 
-#påmelding {
+#signup {
 	float: right;
 	border: 1px solid white;
 	padding: 10px;
@@ -37,7 +37,7 @@ a {
     margin-bottom: 10px;
 }
 
-#påmelding h2 {
+#signup h2 {
 	background: white;
 	color: #139CCE;
 	margin: -10px;
