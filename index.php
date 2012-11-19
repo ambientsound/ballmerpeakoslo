@@ -56,7 +56,7 @@ function get_signup_count() {
 				<label for="email">Epost<label>
 				<input name="email" type="text" placeholder="ballmer@msft.com">
 
-				<input type="submit" value="Meld på">
+				<button type="submit">Meld på</button>
 			</form>
 			<?else: ?>
 			<p>Vi er desverre fulltegnet for denne gang, men følg med! Det kommer alltid en neste :)</p>
